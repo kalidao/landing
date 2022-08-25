@@ -8,5 +8,5 @@ a,
 
 .gradient-text {
   @apply text-transparent bg-clip-text;
-  @apply bg-gradient-to-br from-slate-500 via-slate-400 to-gray-900;
+  @apply bg-gradient-to-br from-white via-slate-400 to-gray-100;
 }
