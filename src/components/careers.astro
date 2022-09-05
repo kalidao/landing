@@ -2,13 +2,13 @@
 import ContentSection from "~/components/content-section.astro";
 import { Icon } from "astro-icon";
 
-const products = [
-  {
-    title: "UX Designer",
-    icon: "icon-park-outline:graphic-design",
-    description: "",
-    link: "https://docs.google.com/document/d/1ebiargohmdOcNLs--s0zH1V26MC8HUvrJiZWTMoCh5A/edit#heading=h.j12bxxbgd47m",
-  },
+const careers = [
+  // {
+  //   title: "UX Designer",
+  //   icon: "icon-park-outline:graphic-design",
+  //   description: "",
+  //   link: "https://docs.google.com/document/d/1ebiargohmdOcNLs--s0zH1V26MC8HUvrJiZWTMoCh5A/edit#heading=h.j12bxxbgd47m",
+  // },
   {
     title: "Backend Engineer",
     icon: "ic:baseline-engineering",
@@ -24,19 +24,19 @@ const products = [
 ];
 ---
 
-<ContentSection title="Careers" id="careers">
+<ContentSection title="Join Us" id="careers">
   <Fragment slot="lead">
-    <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <ul class="max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {
-        products.map((product) => (
-          <a href={product.link} target="_blank" rel="noopenner">
+        careers.map((career) => (
+          <a href={career.link} target="_blank" rel="noopenner">
             <li class="flex items-center">
               <div class="w-12 h-12 p-3 border-1 border-current rounded-full">
-                <Icon name={product.icon} />
+                <Icon name={career.icon} />
               </div>
-              <p class="text-center">{product.title}</p>
+              <p class="text-center">{career.title}</p>
               <p class="text-sm text-center text-offset">
-                {product.description}
+                {career.description}
               </p>
             </li>
           </a>
