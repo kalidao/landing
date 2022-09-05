@@ -17,6 +17,11 @@ const links = [
     description: "Kali on Twitter",
     icon: "fa-brands:twitter",
   },
+  {
+    url: "https://app.dework.xyz/kali-1/app-3/view/board-l636uk17",
+    description: "Kali on Dework",
+    icon: "carbon:collaborate",
+  },
 ];
 ---
 
@@ -28,6 +33,8 @@ const links = [
           <a
             class="flex items-center justify-center w-16 h-16 p-4 border-2 border-current rounded-full"
             href={link.url}
+            target="_blank"
+            rel="noopenner"
           >
             <span class="sr-only">{link.description}</span>
             <Icon class="h-full" name={link.icon} />
