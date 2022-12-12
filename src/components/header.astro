@@ -1,20 +1,26 @@
 ---
 import ThemeSwitcher from "~/components/theme-switcher.astro";
+import { Icon } from "astro-icon";
 
 const navItems = [
-  { title: "Products", url: "#products" },
-  { title: "Contributors", url: "#careers" },
+  { title: "Kali", url: "https://app.kali.gg/" },
+  { title: "Wrappr", url: "https://www.wrappr.wtf/" },
+  { title: "Blog", url: "https://mirror.xyz/kalico.eth" },
+  { title: "Contribute", url: "/contribute" },
   // { title: "Features", url: "#features" },
 ];
 ---
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-10 flex items-center justify-between w-full px-8 py-4 text-white border-b border-transparent"
+  class="absolute bottom-0 z-10 flex items-center justify-end w-full px-8 py-4 text-white border-b border-transparent"
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="#">
+  <!-- <a
+    class="flex items-center gap-3 hover:!text-default"
+    href="https://app.kali.gg/"
+  >
     <h1 class="">Kali</h1>
-  </a>
+  </a> -->
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
@@ -36,7 +42,7 @@ const navItems = [
         class="btn sm:hidden"
         aria-label="Navigation"
       >
-        Open Nav
+        menu
       </button>
       <ThemeSwitcher />
     </div>
@@ -50,7 +56,7 @@ const navItems = [
               class="btn"
               aria-label="Close navigation"
             >
-              Close Nav
+              close
             </button>
           </header>
           <nav>

@@ -1,16 +1,12 @@
 ---
-import Products from "~/components/products.astro";
-import Careers from "~/components/careers.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
-import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { site } = Astro;
 const image = new URL("social.png", site);
 const description =
-  "Kali is a no-code platform for creating on-chain organizations that interface with real world. Launch internet-native structures now.";
+  "Kali is a no-code platform for creating on-chain organizations that interface with real world. Launch internet-native structures now. Contribute to the future of organizing on the internet.";
 ---
 
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
@@ -20,7 +16,7 @@ const description =
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml" /> -->
 
-    <title>KALI</title>
+    <title>KALI - Contribute</title>
     <meta name="description" content={description} />
 
     <!-- fonts -->
@@ -79,12 +75,35 @@ const description =
     class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white"
   >
     <Header />
-    <Splash />
-    <!-- <div class="px-8 py-32 space-y-24">
-      <Intro />
-      <Products />
-      <Careers />
-    </div> -->
+    <!-- create a copy for contributing to open source protocol kali protocol with link to github and dao app -->
+    <!-- tailwind class for keeping text centered and -->
+    <main
+      class="h-full flex flex-col items-center justify-center flex-1 px-4 py-8 mx-auto text-left max-w-7xl"
+    >
+      <h1
+        class="font-black tracking-wide text-justify text-8xl gradient-text hover:animate-pulse"
+      >
+        Contribute
+      </h1>
+      <p class="mt-4 text-xl">
+        Kali is a no-code platform for creating on-chain organizations that
+        interface with real world. Help shape the future by contributing to our
+        fully open-sourced <a href="https://github.com/kalidao/kali-contracts"
+          >protocol.
+        </a>We invite you to join the conversation on our <a
+          href="https://discord.com/invite/UKCS9ghzUE"
+          >Discord.
+        </a>
+      </p>
+      <div
+        class="flex flex-col items-center justify-center w-full mt-8 space-y-4"
+      >
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+    </main>
     <Footer />
   </body>
 </html>
